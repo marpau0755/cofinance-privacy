@@ -1,43 +1,99 @@
+@'
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Terms & Conditions</title>
 <link rel="icon" href="icon_logo.png" type="image/png">
 <style>
-html,body{height:100%}
-*{box-sizing:border-box}
-body{margin:0;background:#ffffff;color:#1a1a1a;font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+html,body{height:100%}*{box-sizing:border-box}
+body{margin:0;background:#fff;color:#1a1a1a;font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
 .body-wrap{min-height:100%;display:flex;flex-direction:column}
 .center-wrap{display:flex;justify-content:center;padding:24px 16px}
 .centered-content{width:min(860px,100%);text-align:left}
-.site-header{display:flex;align-items:center;padding:14px 0 12px;margin-bottom:14px;border-bottom:1px solid #e9eef5}
-.site-header img{width:36px;height:36px;display:block}
+.site-header{display:flex;align-items:center;gap:16px;padding:14px 0 12px;margin-bottom:14px;border-bottom:1px solid #e9eef5}
+.site-header .brand{width:250px;max-width:100%;height:auto;display:block}
+.site-nav{margin-left:auto;display:flex;gap:16px;font-size:14px}
+.site-nav a{color:#2A73FF;text-decoration:none} .site-nav a:hover{text-decoration:underline}
 .card{background:#fff;border:1px solid #e9eef5;border-radius:12px;padding:22px 20px;box-shadow:0 4px 12px rgba(16,24,40,.04)}
 h1{margin:.5rem 0 1rem;font-size:28px} h2{margin:1.6rem 0 .5rem;font-size:20px}
-a{color:#2A73FF;text-decoration:none} a:hover{text-decoration:underline}
+a{color:#2A73FF}
 .site-footer{position:sticky;bottom:0;padding:14px 0;text-align:center;font-size:13px;color:#667085;border-top:1px solid #e9eef5;background:#fff}
-</style>
-</head>
-<body>
-<div class="body-wrap">
-  <main class="center-wrap">
-    <div class="centered-content">
-      <header class="site-header">
-        <img src="./icon_logo.png" alt="CoFinance">
-      </header>
+</style></head>
+<body><div class="body-wrap">
+  <main class="center-wrap"><div class="centered-content">
+    <header class="site-header">
+      <img class="brand" src="./icon_logo.png" alt="CoFinance">
+      <nav class="site-nav"><a href="./">Privacy</a><a href="./terms.html">Terms</a></nav>
+    </header>
 
-      <h1>Terms & Conditions</h1>
-      <div class="card">
-        <!-- REPLACE THIS BLOCK WITH YOUR IN‑APP TERMS COPY -->
-        <h2>Agreement</h2>
-        <p>Paste the exact app Terms here.</p>
-        <h2>Contact</h2>
-        <p><a href="mailto:YOUR_GMAIL_HERE">YOUR_GMAIL_HERE</a></p>
-      </div>
+    <h1>Terms & Conditions</h1>
+    <div class="card">
+      <p>Last updated: <script>document.write(new Date().toISOString().slice(0,10))</script></p>
+
+      <h2>Acceptance of Terms</h2>
+      <p>By downloading, installing, or using CoFinance, you agree to be bound by these Terms & Conditions. If you do not agree to these terms, please do not use our service.</p>
+
+      <h2>Service Description</h2>
+      <ul>
+        <li>Track income and expenses</li>
+        <li>Collaborate on budgets with partners</li>
+        <li>Monitor financial activity</li>
+        <li>Access data across multiple devices</li>
+      </ul>
+
+      <h2>User Responsibilities</h2>
+      <ul>
+        <li>Provide accurate and current information</li>
+        <li>Maintain the security of your account</li>
+        <li>Use the service only for lawful purposes</li>
+        <li>Not share your account with others</li>
+        <li>Respect the privacy of budget partners</li>
+      </ul>
+
+      <h2>Data Management and Cleanup</h2>
+      <ul>
+        <li>Activity logs are automatically deleted after 90 days</li>
+        <li>This automated cleanup applies to all users and budgets</li>
+        <li>Budget data (income/expenses) is retained until account deletion</li>
+        <li>Users can manually clear recent activities at any time</li>
+        <li>We reserve the right to modify data retention policies with notice</li>
+      </ul>
+
+      <h2>Account Termination</h2>
+      <ul>
+        <li>You may delete your account at any time</li>
+        <li>We may suspend or terminate accounts for violations</li>
+        <li>Upon termination, your data will be deleted within 30 days</li>
+        <li>Budget partners will be notified of account deletion</li>
+      </ul>
+
+      <h2>Privacy and Data Protection</h2>
+      <ul>
+        <li>Your data is protected according to our Privacy Policy</li>
+        <li>We use industry-standard security measures</li>
+        <li>Data is stored securely with Google Firebase</li>
+        <li>We do not sell your personal information</li>
+      </ul>
+
+      <h2>Service Availability</h2>
+      <ul>
+        <li>We strive for 99.9% uptime but cannot guarantee uninterrupted service</li>
+        <li>Maintenance may temporarily affect availability</li>
+        <li>We reserve the right to modify or discontinue features</li>
+        <li>Users will be notified of significant changes</li>
+      </ul>
+
+      <h2>Limitation of Liability</h2>
+      <p>CoFinance is provided "as is" without warranties. We are not liable for financial decisions made using the app, data loss due to technical issues, third‑party service interruptions, or indirect/consequential damages.</p>
+
+      <h2>Changes to Terms</h2>
+      <p>We may update these Terms & Conditions at any time. Continued use of the service after changes constitutes acceptance of the new terms. We will notify users of significant changes.</p>
+
+      <h2>Contact Information</h2>
+      <p>For questions, contact us through the app or email <a href="mailto:cofinance.contact@gmail.com">cofinance.contact@gmail.com</a>.</p>
+
+      <p><em>By using CoFinance, you acknowledge that you have read, understood, and agree to be bound by these Terms & Conditions.</em></p>
     </div>
-  </main>
+  </div></main>
   <footer class="site-footer">© 2025 CoFinance • All rights reserved</footer>
-</div>
-</body>
-</html>
+</div></body></html>
+'@ | Set-Content .\docs\terms.html
