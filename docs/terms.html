@@ -11,8 +11,12 @@ body{margin:0;background:#ffffff;color:#1a1a1a;font:16px/1.65 system-ui,-apple-s
 .body-wrap{min-height:100%;display:flex;flex-direction:column}
 .center-wrap{display:flex;justify-content:center;padding:24px 16px}
 .centered-content{width:min(860px,100%);text-align:left}
-.site-header{display:flex;align-items:center;padding:14px 0 12px;margin-bottom:14px;border-bottom:1px solid #e9eef5}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:14px 0 12px;margin-bottom:14px;border-bottom:1px solid #e9eef5}
 .site-header img{width:36px;height:36px;display:block}
+.nav-links{display:flex;gap:16px;font-size:14px}
+.nav-links a{color:#2A73FF;text-decoration:none;padding:4px 8px;border-radius:4px}
+.nav-links a:hover{background:#f0f4ff;text-decoration:none}
+.nav-links a.active{background:#2A73FF;color:#fff}
 .card{background:#fff;border:1px solid #e9eef5;border-radius:12px;padding:22px 20px;box-shadow:0 4px 12px rgba(16,24,40,.04)}
 h1{margin:.5rem 0 1rem;font-size:28px} h2{margin:1.6rem 0 .5rem;font-size:20px}
 a{color:#2A73FF;text-decoration:none} a:hover{text-decoration:underline}
@@ -25,6 +29,11 @@ a{color:#2A73FF;text-decoration:none} a:hover{text-decoration:underline}
     <div class="centered-content">
       <header class="site-header">
         <img src="./icon_logo.png" alt="CoFinance">
+        <nav class="nav-links">
+          <a href="index.html">Privacy</a>
+          <a href="terms.html" class="active">Terms</a>
+          <a href="support.html">Support</a>
+        </nav>
       </header>
 
       <h1>Terms & Conditions</h1>

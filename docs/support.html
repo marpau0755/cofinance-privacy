@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support</title>
+<link rel="icon" href="icon_logo.png" type="image/png">
+<style>
+html,body{height:100%}
+*{box-sizing:border-box}
+body{margin:0;background:#ffffff;color:#1a1a1a;font:16px/1.65 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+.body-wrap{min-height:100%;display:flex;flex-direction:column}
+.center-wrap{display:flex;justify-content:center;padding:24px 16px}
+.centered-content{width:min(860px,100%);text-align:left}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:14px 0 12px;margin-bottom:14px;border-bottom:1px solid #e9eef5}
+.site-header img{width:36px;height:36px;display:block}
+.nav-links{display:flex;gap:16px;font-size:14px}
+.nav-links a{color:#2A73FF;text-decoration:none;padding:4px 8px;border-radius:4px}
+.nav-links a:hover{background:#f0f4ff;text-decoration:none}
+.nav-links a.active{background:#2A73FF;color:#fff}
+.card{background:#fff;border:1px solid #e9eef5;border-radius:12px;padding:22px 20px;box-shadow:0 4px 12px rgba(16,24,40,.04)}
+h1{margin:.5rem 0 1rem;font-size:28px} h2{margin:1.6rem 0 .5rem;font-size:20px}
+a{color:#2A73FF;text-decoration:none} a:hover{text-decoration:underline}
+.muted{color:#566072}
+.site-footer{position:sticky;bottom:0;padding:14px 0;text-align:center;font-size:13px;color:#667085;border-top:1px solid #e9eef5;background:#fff}
+.faq-item{margin-bottom:16px;padding:12px;background:#f8f9fa;border-radius:8px}
+.faq-question{font-weight:600;margin-bottom:8px}
+.faq-answer{color:#566072;line-height:1.5}
+.contact-section{background:#f0f4ff;padding:16px;border-radius:8px;margin-top:20px}
+@media (max-width: 600px) {
+  .nav-links{flex-direction:column;gap:8px}
+  .site-header{flex-direction:column;align-items:flex-start;gap:12px}
+}
+</style>
+</head>
+<body>
+<div class="body-wrap">
+  <main class="center-wrap">
+    <div class="centered-content">
+      <header class="site-header">
+        <img src="./icon_logo.png" alt="CoFinance">
+        <nav class="nav-links">
+          <a href="index.html">Privacy</a>
+          <a href="terms.html">Terms</a>
+          <a href="support.html" class="active">Support</a>
+        </nav>
+      </header>
+
+      <h1>Support</h1>
+      <div class="card">
+        <h2>Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+          <div class="faq-question">How do I create my first budget?</div>
+          <div class="faq-answer">When you first open the app, you'll be prompted to create a budget. Enter your income sources and set up your spending categories. The app will guide you through the process step by step.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How does the pay period calculation work?</div>
+          <div class="faq-answer">CoFinance automatically calculates your pay periods based on your income frequency. For multiple incomes, it uses the least frequent primary income to determine the period, then counts how many checks of other incomes fall within that period.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">What's the difference between Free and Pro tiers?</div>
+          <div class="faq-answer">Free tier allows one budget with basic features. Pro tier ($4.99/month) includes unlimited budgets, advanced analytics, and premium features for comprehensive financial management.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How do I restore my purchases?</div>
+          <div class="faq-answer">Go to Settings → Upgrade → Restore Purchases. This will restore your Pro subscription if you've previously purchased it on this device or account.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">Can I use the app offline?</div>
+          <div class="faq-answer">Yes! CoFinance works offline. Your data syncs automatically when you have an internet connection. You can view and update your budget even without internet access.</div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">How do I delete my account?</div>
+          <div class="faq-answer">To delete your account and all associated data, please email us at <a href="mailto:cofinance.contact@gmail.com">cofinance.contact@gmail.com</a> with "Delete Account" in the subject line. We'll process your request within 48 hours.</div>
+        </div>
+
+        <div class="contact-section">
+          <h2>Still need help?</h2>
+          <p>If you can't find the answer to your question above, please contact us:</p>
+          <p><strong>Email:</strong> <a href="mailto:cofinance.contact@gmail.com">cofinance.contact@gmail.com</a></p>
+          <p>We typically respond within 24-48 hours during business days.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer">© 2025 CoFinance • All rights reserved</footer>
+</div>
+</body>
+</html>
