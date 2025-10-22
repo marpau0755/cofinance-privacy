@@ -12,7 +12,7 @@ body{margin:0;background:#ffffff;color:#1a1a1a;font:16px/1.65 system-ui,-apple-s
 .center-wrap{display:flex;justify-content:center;padding:24px 16px}
 .centered-content{width:min(860px,100%);text-align:left}
 .site-header{display:flex;align-items:center;justify-content:space-between;padding:14px 0 12px;margin-bottom:14px;border-bottom:1px solid #e9eef5}
-.site-header img{width:36px;height:36px;display:block}
+.site-header img{width:250px;height:auto;max-width:100%;display:block}
 .nav-links{display:flex;gap:16px;font-size:14px}
 .nav-links a{color:#2A73FF;text-decoration:none;padding:4px 8px;border-radius:4px}
 .nav-links a:hover{background:#f0f4ff;text-decoration:none}
@@ -20,7 +20,13 @@ body{margin:0;background:#ffffff;color:#1a1a1a;font:16px/1.65 system-ui,-apple-s
 .card{background:#fff;border:1px solid #e9eef5;border-radius:12px;padding:22px 20px;box-shadow:0 4px 12px rgba(16,24,40,.04)}
 h1{margin:.5rem 0 1rem;font-size:28px} h2{margin:1.6rem 0 .5rem;font-size:20px}
 a{color:#2A73FF;text-decoration:none} a:hover{text-decoration:underline}
+.muted{color:#566072}
 .site-footer{position:sticky;bottom:0;padding:14px 0;text-align:center;font-size:13px;color:#667085;border-top:1px solid #e9eef5;background:#fff}
+ul{margin:.4rem 0 1rem 1.1rem}
+@media (max-width: 600px) {
+  .nav-links{flex-direction:column;gap:8px}
+  .site-header{flex-direction:column;align-items:flex-start;gap:12px}
+}
 </style>
 </head>
 <body>
@@ -37,11 +43,59 @@ a{color:#2A73FF;text-decoration:none} a:hover{text-decoration:underline}
 
       <h1>Terms & Conditions</h1>
       <div class="card">
-        <!-- REPLACE THIS BLOCK WITH YOUR IN‑APP TERMS COPY -->
-        <h2>Agreement</h2>
-        <p>Paste the exact app Terms here.</p>
-        <h2>Contact</h2>
-        <p><a href="mailto:YOUR_GMAIL_HERE">YOUR_GMAIL_HERE</a></p>
+        <p class="muted">Last updated: <script>document.write(new Date().toISOString().slice(0,10))</script></p>
+
+        <h2>Agreement to Terms</h2>
+        <p>By downloading, installing, or using CoFinance, you agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use our service.</p>
+
+        <h2>Service Description</h2>
+        <p>CoFinance is a budget management application that helps users track income, expenses, and financial goals. The service includes:</p>
+        <ul>
+          <li>Budget creation and management</li>
+          <li>Income and expense tracking</li>
+          <li>Financial goal setting and monitoring</li>
+          <li>Data synchronization across devices</li>
+          <li>Collaborative budgeting features</li>
+        </ul>
+
+        <h2>User Responsibilities</h2>
+        <ul>
+          <li>Provide accurate and current information</li>
+          <li>Maintain the security of your account credentials</li>
+          <li>Use the service in compliance with applicable laws</li>
+          <li>Not share your account with others</li>
+          <li>Report any security breaches or unauthorized access</li>
+        </ul>
+
+        <h2>Subscription and Payment</h2>
+        <ul>
+          <li>Free tier includes basic budgeting features</li>
+          <li>Pro subscription ($4.99/month) includes unlimited budgets and advanced features</li>
+          <li>Subscriptions are billed through your app store account</li>
+          <li>You can cancel your subscription at any time through your app store settings</li>
+          <li>No refunds for partial subscription periods</li>
+        </ul>
+
+        <h2>Data and Privacy</h2>
+        <ul>
+          <li>Your data is stored securely using industry-standard encryption</li>
+          <li>We do not sell your personal information</li>
+          <li>Activity logs are automatically deleted after 90 days</li>
+          <li>You can delete your account and data at any time</li>
+          <li>See our Privacy Policy for detailed information</li>
+        </ul>
+
+        <h2>Limitation of Liability</h2>
+        <p>CoFinance is provided "as is" without warranties of any kind. We are not liable for any financial decisions made based on the app's information or recommendations.</p>
+
+        <h2>Termination</h2>
+        <p>We may terminate or suspend your account at any time for violation of these terms. You may delete your account at any time through the app settings or by contacting us.</p>
+
+        <h2>Changes to Terms</h2>
+        <p>We may update these terms from time to time. Continued use of the service after changes constitutes acceptance of the new terms.</p>
+
+        <h2>Contact Information</h2>
+        <p>For questions about these Terms and Conditions, please contact us at <a href="mailto:cofinance.contact@gmail.com">cofinance.contact@gmail.com</a>.</p>
       </div>
     </div>
   </main>
